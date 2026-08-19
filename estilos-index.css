@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap');
+
+/* --- 1. VARIABLES DE DISEÑO --- */
+:root {
+    --color-oro-principal: #C5A059;
+    --color-oro-brillo: #E2C792;
+    --color-azul-marino: #111D2D;
+    --color-fondo-nude: #FAF6F0;
+    --color-tarjeta-bg: rgba(255, 255, 255, 0.85);
+    --color-texto-cuerpo: #4A403A;
+}
+
+/* --- 2. ESTILOS GENERALES Y TIPOGRAFÍAS --- */
+body {
+    background-color: var(--color-fondo-nude);
+    color: var(--color-texto-cuerpo);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+.fuente-marca, 
+.fuente-titulo-seccion {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-azul-marino);
+}
+
+.fuente-eslogan {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--color-oro-principal);
+}
+
+.fuente-subtitulo-etiqueta {
+    color: var(--color-azul-marino);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* --- 3. BARRA DE NAVEGACIÓN --- */
+.navegacion-principal {
+    background: rgba(250, 246, 240, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.25);
+}
+
+.navegacion-logo-img {
+    height: 42px;
+}
+
+.navegacion-enlace {
+    color: var(--color-azul-marino) !important;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navegacion-enlace:hover, 
+.desplegable-item:hover {
+    color: var(--color-oro-principal) !important;
+}
+
+.desplegable-menu {
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* --- 4. SECCIÓN BIENVENIDA (HERO) --- */
+.seccion-bienvenida {
+    padding: 7rem 0 3rem;
+}
+
+.bienvenida-logo-img {
+    max-width: 200px;
+}
+
+.bienvenida-nombre-doctora {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.bienvenida-especialidad {
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+}
+
+/* --- 5. SECCIÓN OVERVIEW / TARJETAS --- */
+.seccion-overview {
+    padding-bottom: 5rem;
+}
+
+.tarjeta-informativa {
+    background: var(--color-tarjeta-bg);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    border-radius: 12px;
+    padding: 2.2rem 1.8rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-informativa:hover {
+    transform: translateY(-5px);
+    background-color: var(--color-oro-principal);
+    border-color: var(--color-oro-principal);
+    box-shadow: 0 12px 30px rgba(197, 160, 89, 0.15);
+}
+
+.tarjeta-informativa:hover .fuente-subtitulo-etiqueta,
+.tarjeta-informativa:hover p {
+    color: #ffffff !important;
+}
+
+.tarjeta-linea-decorativa {
+    width: 35px;
+    height: 2px;
+    background-color: var(--color-oro-principal);
+    margin-bottom: 1.2rem;
+}
+
+/* --- 7. PÁGINA: QUIÉNES SOMOS --- */
+.imagen-doctora {
+    border-radius: 16px;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+    width: 100%;
+    max-height: 520px;
+}
+
+
+.banner-cta {
+    background: linear-gradient(135deg, var(--color-azul-marino), #1a2b42);
+    border-radius: 16px;
+    padding: 3.5rem 2rem;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+/* --- 6. BOTONES Y PIE DE PÁGINA --- */
+.boton-agendar-cita {
+    background: linear-gradient(135deg, var(--color-oro-principal), var(--color-oro-brillo));
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.8rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(197, 160, 89, 0.3);
+    transition: all 0.10s ease;
+}
+
+.boton-agendar-cita:hover {
+    box-shadow: 0 6px 18px rgba(197, 160, 89, 0.5);
+}
+
+.pie-pagina {
+    background-color: var(--color-azul-marino);
+    color: var(--color-fondo-nude);
+    border-top: 1px solid rgba(197, 160, 89, 0.3);
+}
