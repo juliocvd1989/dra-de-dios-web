@@ -157,6 +157,15 @@ body {
     box-shadow: 0 6px 18px rgba(197, 160, 89, 0.5);
 }
 
+/* --- AJUSTE DE IMÁGENES DENTRO DE TARJETAS --- */
+.tarjeta-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
 .pie-pagina {
     background-color: var(--color-azul-marino);
     color: var(--color-fondo-nude);
